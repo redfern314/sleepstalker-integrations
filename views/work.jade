@@ -1,0 +1,103 @@
+extends ./style.jade
+block head
+    title Work | Derek Redfern
+block body
+  body
+    div(class="navbar-wrapper")
+      div(class="container")
+        div(class="navbar navbar-inverse" role="navigation")
+          div(class="container")
+            div(class="navbar-header")
+              button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+                span(class="sr-only") Toggle navigation
+                span(class="icon-bar")
+                span(class="icon-bar")
+                span(class="icon-bar")
+              a(class="navbar-brand" href="/") Derek Redfern
+            div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+              ul(class="nav navbar-nav")
+                li
+                  a(href="/") Home
+                li(class="active")
+                  a(href="/work") Work
+                li
+                  a(href="/courses") Courses
+                li
+                  a(href="/projects") Projects
+                li
+                  a(href="/adventures") Adventures
+                li
+                  a(href="/contact") Contact
+
+    div(class="container")
+      div(class="row")
+        div(class="col-xs-12")
+          div(class="panel panel-default")
+            div(class="panel-heading")
+              div(class="row")
+                div(class="col-xs-6")
+                  h3 Retriever Systems, Inc
+                  h5 Engineering Contractor
+                  h5 June - August 2014
+                div(class="col-xs-6 right")
+                  img(src="/img/retriever.png")
+            div(class="panel panel-body")
+              p I was hired on at Retriever Systems as the third employee to act as the primary product engineer over the 
+                | summer of 2014. I got to work with more technologies than I can count, meet VCs, and help design the 
+                | architecture for the product, and the end result was 2 separate wine-tracking solutions for consumers: 
+                a(href="http://www.retrieversystemsinc.com/solutions.html") iCellar and WineBeacon. 
+              p iCellar, the passive component, used RFID tags to asset-track wine bottles in an area. I integrated an off-the-shelf reader 
+                | and existing middleware, and created a custom Node.JS app on AWS as a front-end.
+              p WineBeacon, the active component, used BLE tags to locate wine bottles. Using the TI SensorTag (8051 architecture), I modified
+                | the stock firmware and created a custom GATT protocol to mesh with customized Android and iOS apps.
+      div(class="row")
+        div(class="col-xs-12")
+          div(class="panel panel-default")
+            div(class="panel-heading")
+              div(class="row")
+                div(class="col-xs-6")
+                  h3 Quanttus, Inc
+                  h5 Firmware Engineering Intern
+                  h5 January - March 2014
+                div(class="col-xs-6 right")
+                  img(src="/img/quanttus.png")
+            div(class="panel panel-body")
+              p When I joined the firmware team at Quanttus, I was told that I would be working on documentation and
+                | test harnesses, but probably not the production codebase. Fast-forward a month, and I was given a chance
+                | to start working on a library for the device after I presented my test harness to my supervisor! 
+              p Quanttus is creating a medical wearable device, and I learned a lot while working on the device firmware... 
+                | starting a new codebase requires significant foresight into what the future will require and how best
+                | to write reusable, readable code (with comments!).
+      div(class="row")
+        div(class="col-xs-12")
+          div(class="panel panel-default")
+            div(class="panel-heading")
+              div(class="row")
+                div(class="col-xs-6")
+                  h3 Synapse Product Development
+                  h5 Software Engineering Intern
+                  h5 June - August 2013
+                div(class="col-xs-6 right")
+                  img(src="/img/synapse.png")
+            div(class="panel panel-body")
+              p At Synapse, I got my first taste of developing with ARM - prior to that, I had only worked with bare-metal C on
+                | AVR-based chips. During my time there, I helped them to investigate and flesh out the product design and specifications,
+                | sometimes working directly with a representative from the Fortune 100 client to research features.
+              p Although we weren't yet working on production code for the product, I worked with RTOS-based test applications for our
+                | dev boards, and investigated feasibility and design challenges using the Arduino platform to rapidly prototype concepts.
+      div(class="row")
+        div(class="col-xs-12")
+          div(class="panel panel-default")
+            div(class="panel-heading")
+              div(class="row")
+                div(class="col-xs-6")
+                  h3 One2One2Go
+                  h5 Intern
+                  h5 January - May 2011
+                div(class="col-xs-6 right")
+                  img(src="/img/squeak.png")
+            div(class="panel panel-body")
+              p One2One2Go is a nonprofit organization working to improve the education and lives of kids and families in the Somerville area. 
+              p The project I worked on while I was with them involved leading the repair and reimaging of computer systems. I installed Ubuntu 10.10 and a suite of educational applications and installed them into the homes of residents of the Clarendon Hill Apartments, a mostly Haitian housing complex.
+              p As part of a parallel project to increase technological literacy in the complex, I helped to run an evening class for kids on eToys, a graphical programming environment in which they could create their own games.
+              p I also started the process of training new volunteers to continue the eToys classes and similar workshops in my absence from the organization.
